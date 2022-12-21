@@ -11,11 +11,10 @@
   
 ## Features
 
-* Admin and Student authorization and authenticaiton into the applicaiton has been designed using session UUID. Validation has been considered over the input recieved from the client.<br>
+* Admin and Student authorization and authenticaiton into the applicaiton has been designed Spring Security Basic Authentication. Validation has been considered over the input recieved from the client.<br>
 * At the time of applicaiton start, a default admin is created by the application whose credentials are given below.<br>
-    Admin_Name: "root"<br>
-    Password: "Emachines@7676"<br>
-* Everytime a student or admin does login operation ,a new entry is saved in the session table with unique UUID. This unique UDId is used for authorization and authenticaiton of the student/admin for accessing all the API's from the server.<br>
+    Admin_Name: "admin"<br>
+    Password: "admin"<br>
 
 * Admin Controls:
     * Login to the application is done user admin_name and password. Every admin must have a unique admin_name(user_name). 
@@ -25,7 +24,7 @@
     * Admins can access various details of all the students and also can change their courses.
     * Admin can log out from the application.
 * Student Controls:
-    * Student can not signup himself to the application, only an admin can add a student to the database.
+    * Only an admin can add a student to the database.
     * A student can login using his unique student_Code and Date of Birth.
     * Once a student has logged in, he can update his personal information such as fathers name,mothers name,phone number, email and addresses.
     * A student can leave a course of his/her choice assgined to him/her by the admin.
@@ -39,6 +38,7 @@
 * Java
 * Spring Framework
 * Spring Boot
+* Spring Security
 * Spring Data JPA
 * Hibernate
 * MySQL
@@ -62,7 +62,7 @@
 
 ```
     #changing the server port
-    server.port=8080
+    server.port=8060
 
     #db specific properties
     spring.datasource.url=jdbc:mysql://127.0.0.1:3306/studentManage
@@ -76,37 +76,9 @@
 
 ```
 * Swagger dependency has been added to the applicaiton, Hence API's can be accessed using PostMan or Swagger UI.
-* URL for accessing Swagger UI : http://localhost:8080/swagger-ui/index.html 
+* URL for accessing Swagger UI : http://localhost:8060/swagger-ui/index.html 
 
 <!-- ============================================  API ROOT ENDPOINTS ======================================================  -->
-
-## API's as per roles.
-
-### Admin:
-  * addAdmin - admin access
-  * loginAdmin - admin access
-  * logoutAdmin - admin access  
-
-### Student:
-  * addCourseToStuden - admin access
-  * addStudent - admin access
-  * getCoursesByStudentId - student access
-  * getStudentByName - admin access
-  * loginStudent - student access 
-  * logoutStudent - student access 
-  * updateStudentDetails - student access 
- 
-### Course:
-  * addCourse - admin access
-  * findByCourseName - student access
-  * getAllTopicsAssigned - student access
-  * getStudentsByCourseId - admin access
-  * removeCourseById - student access
- 
-### Address:
-  * updateCorrespondenceAddress - student access
-  * updateCurrentAddress - student access
-  * updatePermanentAddress - student access
 
 
 
