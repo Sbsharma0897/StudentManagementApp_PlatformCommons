@@ -82,7 +82,7 @@
 <!-- ============================================  SWAGGER INTEGRATION ======================================================  -->
 ## Swagger UI
 ## Student Controller
-[![SwaggerUI](https://github.com/kalevishal52/Movie_Ticket_Booking_Application_Backend/blob/main/images/Images/s2.png?raw=true)](https://github.com/kalevishal52/Movie_Ticket_Booking_Application_Backend/blob/main/images/Images/s2.png?raw=true)
+[![SwaggerUI](https://github.com/Sbsharma0897/StudentManagementApp_PlatformCommons/blob/main/images/Screenshot%202022-12-21%20at%2012.38.12%20PM.png?raw=true)](https://github.com/Sbsharma0897/StudentManagementApp_PlatformCommons/blob/main/images/Screenshot%202022-12-21%20at%2012.38.12%20PM.png?raw=true)
 
 
 ## Course Controller
