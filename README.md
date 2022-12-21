@@ -78,7 +78,7 @@
 * Swagger dependency has been added to the applicaiton, Hence API's can be accessed using PostMan or Swagger UI.
 * URL for accessing Swagger UI : http://localhost:8060/swagger-ui/index.html 
 
-<!-- ============================================  API ROOT ENDPOINTS ======================================================  -->
+<!-- ============================================  SWAGGER INTEGRATION  ======================================================  -->
 
 
 
