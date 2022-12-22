@@ -51,6 +51,10 @@ public class StudentAddress {
 	@Enumerated(EnumType.STRING)
 	private AddressType addressType;
 	
+	@ManyToOne
+	@JoinColumn(name = "student_Id")
+	private Student student;
+	
 
 	
 	

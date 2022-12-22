@@ -63,7 +63,7 @@ public class Student {
 	
 	private String mother_Name;
 	 
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToMany(cascade = CascadeType.ALL,mappedBy="student")
 	private List<StudentAddress> addresses=new ArrayList<>();
 	
 	@ManyToMany(cascade = CascadeType.ALL)

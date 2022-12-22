@@ -56,13 +56,12 @@ public class StudentServiceImpl implements StudentService{
 		
 		Student student=this.modelMapper.map(studentDto, Student.class);
 		
-//		List<StudentAddress> listDtos=studentDto.getAddresses()
-//				.stream()
-//				.map(address->modelMapper.map(address, StudentAddress.class))
-//				.collect(Collectors.toList());
-//		
-//		student.setAddresses(listDtos);
-//		
+        List<StudentAddress> addresses=student.getAddresses();
+        for(StudentAddress address:addresses)
+        {
+        	address.setStudent(student);
+        }
+        
 		Student returnedStudent=null;
 		try {
 			returnedStudent=studentRepo.save(student);
