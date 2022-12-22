@@ -80,4 +80,10 @@
 * URL for accessing Swagger UI : http://localhost:8060/swagger-ui/index.html 
 
 <!-- ============================================  SWAGGER INTEGRATION ======================================================  -->
+## Swagger UI
+## Student Controller
+[![SwaggerUI](https://github.com/Sbsharma0897/StudentManagementApp_PlatformCommons/blob/main/images/Screenshot%202022-12-21%20at%2012.38.12%20PM.png?raw=true)](https://github.com/Sbsharma0897/StudentManagementApp_PlatformCommons/blob/main/images/Screenshot%202022-12-21%20at%2012.38.12%20PM.png?raw=true)
 
+
+## Course Controller
+[![SwaggerUI](https://github.com/Sbsharma0897/StudentManagementApp_PlatformCommons/blob/main/images/Screenshot%202022-12-21%20at%2012.37.14%20PM.png?raw=true)](https://github.com/Sbsharma0897/StudentManagementApp_PlatformCommons/blob/main/images/Screenshot%202022-12-21%20at%2012.37.14%20PM.png?raw=true)
