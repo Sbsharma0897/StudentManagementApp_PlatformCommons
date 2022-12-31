@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 import org.apache.tomcat.jni.Address;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import com.StudentManagement.DTO.CourseDto;
